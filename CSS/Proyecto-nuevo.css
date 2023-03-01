@@ -1,0 +1,857 @@
+/*   */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+* {
+
+    font-family: 'Montserrat';
+}
+
+html , body {
+    margin: 0%;
+    scroll-behavior: smooth;
+
+}
+
+
+.seccionP {
+  /* ANCHO,  Con "vw" ( ancho de ventana) */
+    height: 100vh; /* ALTURA, Con  "vh" ( alto de ventana) */
+    background-color: #191c32;
+    color: white; /* aqui solo aplica al texto */
+}
+
+.portafolio {  /* ANCHO,  Con "vw" ( ancho de ventana) */
+    height: 105vh; /* ALTURA, Con  "vh" ( alto de ventana) */
+    background-color: #ececec;
+    color:#191c32; 
+    height: 150vh;
+}
+
+.container2 {
+      /* ANCHO,  Con "vw" ( ancho de ventana) */
+    height: 110vh; /* ALTURA, Con  "vh" ( alto de ventana) */
+    background-color:#191c32;
+    color:#fff; 
+    
+}
+
+header {
+    background-color:#00b2d1;
+    padding: 5px 20px;
+    font-size: 1em;
+    position: fixed;
+    width: 32.4cm;
+}
+
+
+.menu {
+    width: 100%;
+    display: flex; /* La propiedad de display flex,  ayuda a colocar las cajas como si fueran celdas de tablas. */
+    justify-content: space-between; /*  define cómo el navegador distribuye el espacio entre y alrededor de los items flex */
+  /*RELLENO, El valor de 0.5 em puede aproximar 8 px y asi sucecivamente */
+}
+
+.toggle-menu,
+.principal .sotial-network {
+    display: none;
+}
+
+.brand {
+    margin-top: -7px; /*La propiedad margin-top CSS establece el margen en el extremo superior (arriba) del elemento */
+}
+
+.brand h2 {
+    padding: 5px 100px;
+    font-size: 2.5em;
+    margin: 1%;
+}
+
+.brand span {
+    color:#191c32; 
+}
+
+.opciones {
+    display: flex; /* La propiedad de display flex,  ayuda a colocar las cajas como si fueran celdas de tablas. */
+    width: 50%; /* para que un elemento adopte todo el ancho del elemento contenedor que lo contiene */
+    justify-content: space-around;
+    padding: 1px 35px;
+    margin: 10px 10px;
+    align-items: center; /*Esta sive para centrar el texto de una caja*/
+    
+}
+
+.opciones a {
+    color: white;
+    text-decoration: none; /* sirve para eliminar las lineas abajo del texto */
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    transition: ease-in 0.3s; /*proporcionan una forma de animar los cambios de las propiedades CSS, en lugar de que los cambios surtan efecto de manera instantánea*/
+    /* ease-in: lento al principio, rápido/abrupto al final;  ease-out: rápido/abrupto al principio, lento al final*/
+}
+
+
+.opciones li {
+    list-style: none; /* este siver para eliminar lo puntos al lado de los items */
+}
+
+.opciones .activo { /* Aqui estamos especifianco una etiqueta para editar */
+    color:#191c32; 
+}
+
+.opciones a:hover {  /* nos permite establecer un segundo estado a cualquier elemento, cuándo un usuario interactúa con este, por ejemplo, al pasar el cursor encima. */
+    background-color:#191c32; /* color de fondo */
+    color:#fff; /* Color del texto */
+}
+
+.principal { /* ejemplo, puede usarse para centrar horizontalmente un elemento bloque. div { width:50%; margin:0 auto; } centrará el div horizontalmente.*/
+ 
+    width: 90vw;
+    height: 90vh;
+    display: grid; /*te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro*/
+    grid-template-columns: repeat(2,3fr); /*Usando la función repeat, puedes determinar el tamaño de varios tracks, sean filas o columnas, insertando el número que desees y usando las unidades de medida CSS (positivas) que quieras*/
+    align-items: center; /*  establece el valor align-self sobre todos los descendientes directos de un grupo. La propiedad align-self indica la alineación de un elemento dentro del bloque que lo contiene.*/
+}
+
+.principal {
+    margin: auto;
+}
+
+.principal p {
+    font-size: clamp (3vh, 1.5em, 2.5em) ;
+}
+
+.principal span {
+    color:aqua;
+    font-size: 20px
+}
+
+.principal h1 {
+    font-size: 3em; /*Tamaño de Fuente*/
+    padding: 5px 45px;
+}
+
+.Download {
+    padding: 10px 30px;
+    color:#191c32;
+    background-color: #00b2d1;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 130px;
+    cursor: pointer; /*permite seleccionar el puntero entre los elementos disponibles en el sistema (flecha, mano, reloj de arena, etc.).*/
+}
+
+
+.Download:hover /*coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa*/{ 
+    background-color: #fff ;
+    transition: ease-in 0.3s; 
+    
+}
+
+main img {
+    width: 7.5cm;
+    height: 9.5cm;
+    border: 7px solid #00b2d1;
+    border-radius: 6px;
+    margin: 135px 10px 20px 120px;
+    
+}
+
+
+.info-content {
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.info-content p {
+    text-align: justify;
+    width: 470px;
+    font-size: 1.25em;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about-info {
+    padding: 2.5em;
+    
+ }
+
+.about-info h2 {
+    margin: 0px;
+}
+
+.divider {
+    margin: 10px 4px;
+    height: 5px;
+    width: 6.4cm;
+    background-color: aqua;
+}
+
+.about p {
+    font-size: 1.2em;
+}
+
+.about-info p {
+    margin-bottom: 3em;
+}
+
+
+
+/* ********************************************/
+/* seccion P R O Y E C T O S  */
+/* *******************************************/
+
+.seccion-h2 {
+    /* flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap; */
+}
+ 
+.servicio {
+    /* width: 50%; */
+    height: 300px;
+    
+}
+
+.seccion-habilidades, .fila {
+    padding: 30px 15px;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    text-align: center;
+    background-color: #e7e7e7;
+}
+
+
+
+.seccion-habilidades .fila .servicio {
+    max-width: 200px;
+    background-color: #fff;
+    padding: 25px 45px;
+    margin: auto;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+
+.seccion-habilidades .fila .servicio:hover {
+    box-shadow: 5px 15px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+
+.seccion-habilidades .fila .servicio .icono {
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.seccion-habilidades .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.seccion-habilidades .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.seccion-habilidades .fila .servicio ul {
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.seccion-habilidades .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+.portafolio-headings {
+    width: 250px;
+    /* padding: 1.5em 5em; */
+    margin-left: 12cm;
+    padding: 30px 30px;
+    padding-top: 95px;
+    padding-left: 65px;
+}
+
+.portafolio-headings2 {
+    width: 250px;
+    /* padding: 1.5em 5em; */
+    margin-top: 20px;
+    margin-left: 11.5cm;
+    padding: 30px 30px;
+    padding-bottom: 10px;
+}
+
+
+
+.seccion-h2 {
+    display: flex;
+    padding-left: 72.5px;
+
+}
+
+
+
+/* -------------------------------------------------> */
+/*    F I N    P R O Y E C T O S
+-------------------------------------------------> */
+
+
+
+
+/* -------------------------------------------------> */
+/*   seccion H A B I L I D A D E S */
+/*-------------------------------------------------> */
+
+.portafolio-headings h2 {
+    font-size: 1.65em;
+    text-align: center;
+    margin: 0px;
+}       
+
+ .portafolio .container  {
+    /* width: 65vw; */
+    height: 55vh;
+    display: flex;
+    margin: 12px 30px;
+    margin-left: 52px;
+    margin-bottom: 1em;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+
+.card {
+    border: white;
+    width: 340px;
+    height: 52.5vh;
+    background-color: #ffffff;
+    border-radius: 10px ;
+    margin: 15px ;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card .HTML {
+    text-align: center;
+}
+
+.card .CSS {
+    text-align: center;
+}
+
+.card .JavaScript{
+    
+    text-align: center;
+}
+
+.card .ANGULAR{
+    text-align: center;
+}
+
+.card .NJ{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.card .React{
+    text-align: center;
+}
+
+
+.card_img {
+    width: 100%;
+    height: 150px;
+    background-image: url(./fordmustang\ Simon.jpg); /*Para añadir una imagen de fondo en una página web */
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #191c32;
+    padding: 5px;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.card_proyec_links {
+    display: flex;
+    justify-content: space-evenly; /* distribuye el espacio entre y alrededor de los items flex, de su contenedor.*/
+}
+
+.card_proyec_links a {
+    color:#191c32;
+    text-decoration: none;
+}
+
+.card_proyec_links i {
+    font-size: 1.5em;
+}
+
+.card .CSS {
+    padding: 10px;
+    margin-top: -22px;
+}
+
+.card .JavaScript {
+    margin-top: -2px;
+}
+
+.barra{
+    width: 210px;
+    height: 22.5px;
+    background-color:#6471d1;
+    border-radius: 8px;
+    border-right: 5px solid rgba(225, 225, 225, 0.2);
+    border-bottom: 5px solid rgba(225, 225, 225, 0.2);
+}
+
+.barra2 {
+    width: 210px;
+    height: 22.5px;
+    background-color:#6471d1;
+    border-radius: 8px;
+    border-right: 5px solid rgba(225, 225, 225, 0.2);
+    border-bottom: 5px solid rgba(225, 225, 225, 0.2);
+    text-align: center;
+}
+
+.progreso{
+    width: var(--w);
+    height: 100%;
+    background: rgb(60, 62, 173);
+    border-radius: 8px;
+    animation: aumentar 1.5s ease;
+    margin-bottom: 15px;
+}
+
+.progreso2{
+    width: var(--w);
+    height: 100%;
+    border-radius: 8px;
+    animation: aumentar 1.5s ease;
+    margin-bottom: 15px;
+}
+
+
+.barra span {
+    padding-top: 20px;
+    padding-left: 100px;
+    color:#191c32;
+    font-size: 1.5em;
+}
+
+.barra2 span {
+    font-size: 1.5em;
+}
+
+
+@keyframes aumentar {
+    0%{width:0%;}
+    100% {width: var(--w)}
+}
+
+.card .progreso:active {
+    animation: aumentar 1.5s ease;
+}
+
+
+
+.proyec_details a {
+    text-decoration: none;
+    color: #191c32;
+}
+
+.proyec_details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 10px ; 
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+.contact-seccion{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.container-contact img {
+    opacity: 20%;
+    border-radius: 8px;
+    margin-left: 75px;
+   
+}
+
+.container-contact {
+    padding-left: 5em;
+}
+
+
+.contact-heading {
+    padding: 1.1em;
+    font-size: 1.5em;
+} 
+
+.contact-heading h2{
+  margin: 0px;
+  margin-top: 65px;
+  margin-left: 130px;
+} 
+
+.contact-heading .divider {
+    margin-left: 130px;
+}
+
+.container-contact {
+    height: auto;
+    display: flex;
+    text-align: center;
+} 
+
+.contact_form {
+    align-items: center;
+    margin-left: 10em;
+}
+
+
+
+.form{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 80px;
+
+}
+
+.form1 {
+    padding-bottom: 20px;
+} 
+
+.datos  {
+   padding-left: 120px;
+}
+
+
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 10px;
+    border: none;
+    outline: 0px;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+
+
+
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: #00b2d1;
+}
+
+.footer h2{
+    font-size: 2em;
+    margin: auto;
+}
+
+.footer h5 {
+    font-size: 1em;
+    margin: auto;
+}
+
+.sotial-network {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 300px;
+    margin-top: 1em;
+    font-size: 2em;
+    margin: auto;
+}
+
+@media screen and (max-width: 800px ) { 
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .principal h1 {
+        font-size: 1.4em;
+        margin-left: 82.5px;
+        margin-top: 25px;
+        margin-bottom: -15px;
+    }
+    
+    .portafolio-headings {
+        margin-left: 3.5cm;
+    }
+
+    .portafolio {
+        height: 210vh;
+    }
+
+    .container {
+        display: table-column;
+        /* width: 540px; */
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card-title {
+        padding-top: 45px;
+    }
+
+    .card .CSS {
+        margin-bottom: -40px;
+    }
+
+    .card .HTML {
+        margin-bottom: -20px;
+    }
+
+    .card .JavaScript {
+        margin-left: -40px;
+        margin-top: 20px;
+        margin-bottom: -40px;
+    }
+
+    .card .JavaScript  {
+        width: 80px;
+     
+    }
+
+     .JavaScript img {
+        /* overflow:hidden; */
+        /* background-image:url('Img-Pg/imgJS.png');
+        background-repeat:no-repeat;
+        background-size:cover; */
+        
+       
+    }      
+
+    .card .ANGULAR {
+        margin-top: 30px;
+        margin-bottom: -45px;
+        
+    }
+
+    .card .NJ {
+        margin-bottom: -40px;
+    }
+
+    .card .React {
+        margin-top: 25px;
+        margin-bottom: -40px;
+    }
+
+    .barra, .barra2 {
+        margin-left: -115px;
+        width: 150px;
+    }
+
+    .barra span {
+        margin-left: -50px;
+    }
+
+    .opciones {
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color:#00b2d1;
+        z-index: 1;
+        transform: translate(-110%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .opciones li {
+        margin: 2em;
+        margin-left: 3em;
+    }
+
+    .menu {
+        justify-content: normal;
+    }
+
+    .toggle-menu {
+        margin-left: 290px;
+        display: block;
+        font-size: 1.4em;
+        margin-top: 8.5px;
+    }
+
+    .show-menu {
+        transform: translate(-55%);
+        transition: all 0.5s ease-in-out;
+        width: 21%;
+        padding-left: 10cm;
+        padding-top: 55px;
+        opacity: 95%;
+    }
+
+    .fa-solid {
+        font-size: 1.5em;
+        
+    }
+
+    .info-content {
+        margin-top: 40px;
+        margin-left: 33px;
+    }
+
+
+    .info-content_p {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    main img {
+        width: 35%;
+        height: 43%;
+        margin: auto;
+        margin-bottom: -50px;
+        margin-left: 190px;
+    }
+
+    .principal .sotial-network {
+        display: block;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    .portafolio-headings2 {
+        margin-left: 3.45cm;
+    }
+
+    .seccion-h2 {
+        display: grid;
+        margin-left: -105px;
+    
+    }
+
+    .seccion-habilidades .fila .servicio {
+        max-width: 400px;
+    }
+
+    .Download {
+        margin-left: 120px;
+        margin-bottom: -10px;
+    }
+
+    .container2 {
+        min-width: 300px;
+        flex-direction: column;
+    }
+
+    .container-contact .img_1 {
+        display: none;
+    }
+
+    .datos {
+        padding-left: 0px;
+        margin-left: -10px;
+        font-size: 1.5em;
+    }
+
+    .datos .Download {
+        margin-top: 40px;
+        margin-left: 185px;
+    }
+
+    .form {
+        width: 110%;
+        height: 80px;
+        /* padding-top: 50px; */
+    }
+
+    .form input {
+        height: 125%;
+    }
+
+    .footer-content {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        background-color: #00b2d1;
+    }
+
+    .footer-content h2 {
+        padding: 10px;
+    }
+
+    .sotial-network {
+        width: 350px;
+    }
+}

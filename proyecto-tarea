@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>Proyecto-2023</title>
+</head>
+<body>
+    
+	<!-- Titulo -->
+    <div class="content-body">
+                <div class="nk-block-head nk-block-head-sm bg-white px-2 pb-1">
+    <div class="nk-block-between g-3">
+        <div class="nk-block-head-content">
+            <h3 class="nk-block-title page-title text-primary">
+            	 Actividades y Metas
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div class="nk-block">
+	<div class="card">
+
+	<div class="row">
+
+	<ul class="nav-tabs">
+
+		<li class="nav-item">
+			<a class="nav-link" href="#">
+				<em class="icon ni ni-home"></em>
+				<span data-target="#accion"> Plan de Acción</span>
+			</a>
+		</li>
+
+		<li class="nav-item" >
+			<a class="nav-link" data-target="#actividades" href="#">
+				<em class="icon ni ni-home"></em>
+				<span>Actividades Pendientes</span>
+			</a>
+		</li>
+
+		<li class="nav-item" href="#">
+			<a class="nav-link" data-target="#metasSemanales" href="#" >
+				<em class="icon ni ni-home"></em>
+				<span>Metas de la Semana</span>
+			</a>
+		</li>
+	</ul>
+
+			<div class="tab-content">
+
+				<!-- Primera Seccion -->	
+				<div class="tab-pane" data-content id="accion">
+					<div class="nk-block">
+							
+						<div class="date" style="margin-bottom: -15px;">
+							<h3> Dia:
+								<span id="dateText"></span>
+								<span id="dateNumber"></span> 
+								<span id="dateMonth"></span>
+								del <span id="dateYear"></span>
+							</h3>
+						</div>
+
+						<div class="container_input">
+							<input type="text" class="input" id="inputs" placeholder="Actividad a desarrollar">
+							<input type="time" class="input" id="input_time" style="width: 115px;">
+							<input type="time" class="input" id="input_time" style="width: 115px;">
+							<button class="btn_todo" id="btn_todo">Añadir</button>
+						</div>
+
+						<div class="date" style="margin-bottom: -15px;">
+							<h3> Tareas Pendientes: </h3>
+						</div>
+						
+						<div class="container_todo">	
+							<div class="container_list">
+								<div class="container_list-1">
+									<input type="checkbox" class="casilla">
+									<p class="actividad">Tarea</p>
+								</div>
+								<div class="container_list-btn">
+									<button class="btn-eliminar" ><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+							
+				<!-- Segunda Seccion -->
+				<div class="tab-pane" data-content id="actividades">
+					<div class="nk-block">
+
+
+						<div class="container_input">
+							<input type="text" class="input" id="inputs" placeholder="Actividad a desarrollar">
+							<button class="btn_todo" id="btn_todo">Añadir</button>
+						</div>
+
+						<div class="date" style="margin-bottom: -15px;">
+							<h3> Tareas Pendientes: </h3>
+						</div>
+						
+						<div class="container_todo">	
+							<div class="container_list">
+								<div class="container_list-1">
+									<input type="checkbox" class="casilla">
+									<p class="actividad">Tarea</p>
+								</div>
+								<div class="container_list-btn">
+									<button class="btn-eliminar" ><i class="fas fa-trash-alt"></i></button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Tercera Seccion -->
+				<div class="tab-pane" data-content id="metasSemanales">
+				  <div class="nk-block">
+
+					<div class="activity-content">
+						<span><h3>Seguimiento de Objetivos:</h3></span>
+							<label for="">Metas:</label>
+							<input type="text" placeholder="Meta">
+
+							<label for="">Plazo:</label>
+							<input type="date" placeholder="Actividad Pendiente">
+						<button type="submit"> Añadir (+) </button>
+					</div>
+
+					<br>
+
+					<div class="activity-content3">
+						<button type="submit"> Realizada (palomita) </button>
+							<input type="text" placeholder="Meta">
+						<span>/</span>
+							<input type="date" >
+						<button type="submit"> Eliminar (Bote de basura) </button>
+							<ul>
+									<textarea name="" id="" cols="30" rows="10"></textarea>
+							</ul>
+					</div>
+
+				  </div>
+				</div>
+
+		<br>
+		<br>
+	</div>
+
+
+	    </div>
+	  </div>
+    </div>
+  </div>
+
+  <script src="./funciones.js" defer></script>
+
+</body>
+</html>
+
+
+
